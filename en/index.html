@@ -1,0 +1,1976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BJ Attao for Governor 2026 | Proven Administrator, Ready Governor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ocean-deep: #0A2463;
+            --ocean-bright: #247BA0;
+            --coral: #F25F5C;
+            --sand: #F4E9CD;
+            --white: #FFFFFF;
+            --navy: #1B3A4B;
+            --gold: #D4AF37;
+            --text-dark: #1A1A2E;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            color: var(--text-dark);
+            overflow-x: hidden;
+            background: var(--white);
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(36, 123, 160, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .logo {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--ocean-deep);
+            letter-spacing: -0.02em;
+        }
+
+        .language-selector {
+            display: flex;
+            gap: 0.8rem;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .language-btn {
+            background: transparent;
+            border: 2px solid var(--ocean-bright);
+            border-radius: 4px;
+            padding: 0.4rem 0.7rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            color: var(--navy);
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .language-btn:hover {
+            background: var(--ocean-bright);
+            border-color: var(--ocean-bright);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(36, 123, 160, 0.3);
+        }
+
+        .language-btn.active {
+            background: var(--ocean-deep);
+            border-color: var(--ocean-deep);
+            color: var(--white);
+        }
+
+        .language-btn span {
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--navy);
+            font-weight: 500;
+            transition: color 0.3s;
+            font-size: 0.95rem;
+        }
+
+        .nav-links a:hover {
+            color: var(--ocean-bright);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(135deg, var(--ocean-deep) 0%, var(--ocean-bright) 100%);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            padding-top: 80px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image:
+                radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(242, 95, 92, 0.15) 0%, transparent 50%);
+            animation: wave 20s ease-in-out infinite;
+        }
+
+        @keyframes wave {
+            0%, 100% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-20px) scale(1.05); }
+        }
+
+        .hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-text h1 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 5rem;
+            font-weight: 700;
+            color: var(--white);
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.03em;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-text .subtitle {
+            font-size: 1.8rem;
+            color: var(--sand);
+            margin-bottom: 2rem;
+            font-weight: 300;
+            animation: fadeInUp 1s ease-out 0.2s backwards;
+        }
+
+        .hero-text .tagline {
+            font-size: 1.3rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 3rem;
+            line-height: 1.6;
+            animation: fadeInUp 1s ease-out 0.4s backwards;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            animation: fadeInUp 1s ease-out 0.6s backwards;
+        }
+
+        .btn {
+            padding: 1.2rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 2px;
+        }
+
+        .btn-primary {
+            background: var(--coral);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background: #E04946;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(242, 95, 92, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+
+        .btn-secondary:hover {
+            background: var(--white);
+            color: var(--ocean-deep);
+        }
+
+        .qr-section {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            animation: fadeInUp 1s ease-out 0.8s backwards;
+        }
+
+        .qr-code-container {
+            background: var(--white);
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .qr-code-container img {
+            display: block;
+            width: 150px;
+            height: 150px;
+        }
+
+        .qr-text {
+            color: var(--white);
+        }
+
+        .qr-text h3 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--sand);
+        }
+
+        .qr-text p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .hero-image {
+            position: relative;
+            animation: fadeInUp 1s ease-out 0.3s backwards;
+        }
+
+        .image-frame {
+            position: relative;
+            border: 3px solid var(--gold);
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .candidate-photo {
+            width: 100%;
+            height: auto;
+            display: block;
+            filter: brightness(1.1) contrast(1.05);
+        }
+
+        /* Stats Section */
+        .stats {
+            background: var(--navy);
+            padding: 4rem 2rem;
+            position: relative;
+        }
+
+        .stats-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 3rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            color: var(--white);
+        }
+
+        .stat-number {
+            font-family: 'Crimson Pro', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            opacity: 0.9;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 500;
+        }
+
+        /* Patch vs Blueprint Section */
+        .patch-blueprint {
+            padding: 8rem 2rem;
+            background: linear-gradient(180deg, var(--navy) 0%, var(--ocean-deep) 100%);
+            color: var(--white);
+        }
+
+        .patch-blueprint-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 4rem;
+        }
+
+        .comparison-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 3rem;
+            border-radius: 8px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s;
+        }
+
+        .comparison-card.patch {
+            border-color: rgba(242, 95, 92, 0.3);
+        }
+
+        .comparison-card.blueprint {
+            border-color: rgba(212, 175, 55, 0.5);
+            background: rgba(212, 175, 55, 0.1);
+        }
+
+        .comparison-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .comparison-icon {
+            font-size: 5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .comparison-card h3 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .comparison-card.patch h3 {
+            color: var(--coral);
+        }
+
+        .comparison-card.blueprint h3 {
+            color: var(--gold);
+        }
+
+        .comparison-card p {
+            line-height: 1.8;
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+
+        /* Vision Section */
+        .vision {
+            padding: 8rem 2rem;
+            background: var(--sand);
+        }
+
+        .vision-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-family: 'Crimson Pro', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--ocean-deep);
+            margin-bottom: 3rem;
+            text-align: center;
+            letter-spacing: -0.02em;
+        }
+
+        .vision-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+
+        .vision-card {
+            background: var(--white);
+            padding: 3rem 2.5rem;
+            border-left: 4px solid var(--ocean-bright);
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .vision-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border-left-color: var(--coral);
+        }
+
+        .vision-card h3 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.8rem;
+            color: var(--ocean-deep);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .vision-card p {
+            line-height: 1.8;
+            color: var(--text-dark);
+            opacity: 0.85;
+        }
+
+        .vision-number {
+            position: absolute;
+            top: -20px;
+            right: 20px;
+            font-family: 'Crimson Pro', serif;
+            font-size: 5rem;
+            font-weight: 700;
+            color: var(--ocean-bright);
+            opacity: 0.1;
+        }
+
+        /* Five Pillars Section */
+        .five-pillars {
+            padding: 8rem 2rem;
+            background: linear-gradient(135deg, var(--white) 0%, var(--sand) 50%, var(--white) 100%);
+        }
+
+        .pillars-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .pillars-diagram {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 4rem auto;
+            padding: 4rem;
+        }
+
+        .pillar-center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(135deg, var(--ocean-deep), var(--ocean-bright));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(10, 36, 99, 0.3);
+            z-index: 10;
+        }
+
+        .pillar-center h3 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.8rem;
+            color: var(--white);
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .pillar-items {
+            position: relative;
+            width: 100%;
+            height: 600px;
+        }
+
+        .pillar-item {
+            position: absolute;
+            width: 160px;
+            padding: 1.5rem;
+            background: var(--white);
+            border: 3px solid var(--ocean-bright);
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .pillar-item:hover {
+            transform: scale(1.05);
+            border-color: var(--coral);
+            box-shadow: 0 10px 30px rgba(242, 95, 92, 0.2);
+        }
+
+        .pillar-item:nth-child(1) {
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .pillar-item:nth-child(2) {
+            top: 20%;
+            right: 0;
+        }
+
+        .pillar-item:nth-child(3) {
+            bottom: 20%;
+            right: 5%;
+        }
+
+        .pillar-item:nth-child(4) {
+            bottom: 20%;
+            left: 5%;
+        }
+
+        .pillar-item:nth-child(5) {
+            top: 20%;
+            left: 0;
+        }
+
+        .pillar-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .pillar-item h4 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.1rem;
+            color: var(--ocean-deep);
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        /* Policies Section */
+        .policies {
+            padding: 8rem 2rem;
+            background: linear-gradient(180deg, var(--white) 0%, var(--sand) 100%);
+        }
+
+        .policies-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .policy-cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2.5rem;
+            margin-top: 4rem;
+        }
+
+        .policy-card {
+            background: var(--white);
+            border: 2px solid var(--ocean-bright);
+            padding: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .policy-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--ocean-bright), var(--coral));
+        }
+
+        .policy-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--ocean-deep);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            border-radius: 50%;
+        }
+
+        .policy-card h3 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 2rem;
+            color: var(--ocean-deep);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .policy-card h4 {
+            font-size: 1.1rem;
+            color: var(--coral);
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .policy-card ul {
+            list-style: none;
+            margin-top: 1.5rem;
+        }
+
+        .policy-card li {
+            padding-left: 2rem;
+            margin-bottom: 1rem;
+            position: relative;
+            line-height: 1.7;
+        }
+
+        .policy-card li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--ocean-bright);
+            font-weight: bold;
+        }
+
+        /* Team Section */
+        .team {
+            padding: 8rem 2rem;
+            background: var(--ocean-deep);
+            color: var(--white);
+        }
+
+        .team-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4rem;
+            margin-top: 4rem;
+        }
+
+        .team-member {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 3rem;
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            transition: all 0.3s;
+        }
+
+        .team-member:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: var(--gold);
+            transform: scale(1.02);
+        }
+
+        .team-member h3 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .team-member .role {
+            font-size: 1.2rem;
+            color: var(--ocean-bright);
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 600;
+        }
+
+        .team-member .bio {
+            line-height: 1.8;
+            opacity: 0.9;
+            margin-bottom: 1.5rem;
+        }
+
+        .experience-list {
+            list-style: none;
+            margin-top: 1.5rem;
+        }
+
+        .experience-list li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .experience-list li::before {
+            content: '✓';
+            color: var(--gold);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* AI Technology Section */
+        .ai-tech {
+            padding: 8rem 2rem;
+            background: linear-gradient(135deg, var(--navy) 0%, var(--ocean-deep) 100%);
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ai-tech::before {
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(242, 95, 92, 0.2) 0%, transparent 70%);
+            top: -200px;
+            right: -200px;
+            animation: pulse 8s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.2); opacity: 0.8; }
+        }
+
+        .ai-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .ai-features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+            margin-top: 4rem;
+        }
+
+        .ai-feature {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2.5rem;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s;
+        }
+
+        .ai-feature:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--gold);
+            transform: translateY(-10px);
+        }
+
+        .ai-feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .ai-feature h3 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--sand);
+        }
+
+        .ai-feature p {
+            line-height: 1.7;
+            opacity: 0.9;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 8rem 2rem;
+            background: var(--sand);
+        }
+
+        .contact-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            margin: 4rem 0;
+        }
+
+        .contact-item {
+            padding: 2rem;
+            background: var(--white);
+            border-left: 3px solid var(--ocean-bright);
+        }
+
+        .contact-item h4 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.3rem;
+            color: var(--ocean-deep);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-item p {
+            color: var(--text-dark);
+            opacity: 0.8;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--ocean-deep);
+            color: var(--white);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-motto {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--gold);
+        }
+
+        .footer-text {
+            opacity: 0.8;
+            margin-bottom: 2rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .social-links a {
+            color: var(--white);
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--gold);
+        }
+
+        /* Video Section */
+        .video-section {
+            padding: 8rem 2rem;
+            background: linear-gradient(180deg, var(--sand) 0%, var(--white) 100%);
+        }
+
+        .video-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+            margin-top: 3rem;
+        }
+
+        .video-wrapper video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-text h1 {
+                font-size: 3.5rem;
+            }
+
+            .stats-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .comparison-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .policy-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .ai-features {
+                grid-template-columns: 1fr;
+            }
+
+            .pillar-items {
+                height: 500px;
+            }
+
+            .pillar-center {
+                width: 150px;
+                height: 150px;
+            }
+
+            .pillar-center h3 {
+                font-size: 1.4rem;
+            }
+
+            .pillar-item {
+                width: 130px;
+                padding: 1rem;
+            }
+
+            .pillar-icon {
+                font-size: 2rem;
+            }
+
+            .pillar-item h4 {
+                font-size: 0.9rem;
+            }
+
+            .language-selector {
+                gap: 0.5rem;
+            }
+
+            .language-btn {
+                padding: 0.3rem 0.5rem;
+                font-size: 1rem;
+            }
+
+            .language-btn span {
+                font-size: 0.7rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .language-selector {
+                order: 2;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-text .subtitle {
+                font-size: 1.3rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .qr-section {
+                flex-direction: column;
+                text-align: center;
+                gap: 1.5rem;
+            }
+
+            .qr-code-container img {
+                width: 120px;
+                height: 120px;
+            }
+
+            .stats-container {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-info {
+                grid-template-columns: 1fr;
+            }
+
+            section[style*="Blueprint Banner"] div[style*="bottom: 0"] p {
+                font-size: 1rem !important;
+                padding: 1.5rem 1rem !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">BJ ATTAO 2026</div>
+
+            <div class="language-selector">
+                <button class="language-btn" onclick="changeLanguage('ko')" title="한국어">
+                    🇰🇷 <span>KO</span>
+                </button>
+                <button class="language-btn active" onclick="changeLanguage('en')" title="English">
+                    🇺🇸 <span>EN</span>
+                </button>
+                <button class="language-btn" onclick="changeLanguage('ch')" title="Chamorro">
+                    🇬🇺 <span>CH</span>
+                </button>
+                <button class="language-btn" onclick="changeLanguage('ca')" title="Carolinian">
+                    🇲🇵 <span>CA</span>
+                </button>
+                <button class="language-btn" onclick="changeLanguage('ja')" title="日本語">
+                    🇯🇵 <span>JA</span>
+                </button>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#vision">Vision</a></li>
+                <li><a href="#policies">Policies</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#ai-tech">AI Technology</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Proven Administrator<br>Ready Governor</h1>
+                <p class="subtitle">Blas "BJ" Attao</p>
+                <p class="tagline">Someone who knows administration can revive the economy. Leadership with execution and trust for the future of the Northern Mariana Islands.</p>
+                <div class="cta-buttons">
+                    <a href="#policies" class="btn btn-primary">View Policies</a>
+                    <a href="#contact" class="btn btn-secondary">Join Us</a>
+                </div>
+
+                <div class="qr-section">
+                    <div class="qr-code-container">
+                        <img src="../bj-attao-campaign.jpg" alt="BJ Attao Campaign Video QR Code">
+                    </div>
+                    <div class="qr-text">
+                        <h3>📹 Watch Our Video</h3>
+                        <p>Scan the QR code to<br>see BJ Attao's vision firsthand</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-frame">
+                    <img src="../BJ.png" alt="Blas BJ Attao - CNMI House Vice Speaker" class="candidate-photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-item">
+                <span class="stat-number">8+</span>
+                <span class="stat-label">Years in House</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">2×</span>
+                <span class="stat-label">Former House Speakers</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Pension Payment Guarantee</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">5</span>
+                <span class="stat-label">Differentiated Policies</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blueprint Banner Section -->
+    <section style="padding: 6rem 2rem; background: linear-gradient(180deg, var(--navy) 0%, var(--ocean-deep) 100%);">
+        <div style="max-width: 1400px; margin: 0 auto;">
+            <div style="position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);">
+                <img src="../CNMI_Structural_Blueprint/CNMI_Structural_Blueprint_1.jpg" alt="A Blueprint for a Predictable Future - The BJ Attao Strategy" style="width: 100%; height: auto; display: block;">
+                <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(10, 36, 99, 0.9), transparent); padding: 3rem 2rem;">
+                    <p style="color: var(--white); font-size: 1.3rem; text-align: center; font-weight: 500; max-width: 900px; margin: 0 auto;">
+                        "A Blueprint for a Predictable Future" - BJ Attao's Strategy for a Resilient and Prosperous CNMI
+                    </p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="#policies" style="display: inline-block; padding: 1.2rem 2.5rem; background: var(--gold); color: var(--ocean-deep); text-decoration: none; border-radius: 4px; font-weight: 600; font-size: 1.1rem; transition: all 0.3s; box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);">
+                    View Detailed Plan
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patch vs Blueprint Section -->
+    <section class="patch-blueprint">
+        <div class="patch-blueprint-container">
+            <!-- CNMI at a Crossroads Slide -->
+            <div style="margin-bottom: 4rem;">
+                <img src="../CNMI_Structural_Blueprint/CNMI_Structural_Blueprint_2.jpg" alt="CNMI is at a Crossroads" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 8px; box-shadow: 0 20px 40px rgba(0,0,0,0.15);">
+            </div>
+
+            <h2 class="section-title" style="color: var(--sand);">The Choice Before Us: A Patch or a Blueprint?</h2>
+            <p style="text-align: center; font-size: 1.3rem; opacity: 0.9; max-width: 900px; margin: 0 auto 3rem;">
+                CNMI needs real change. Will we repeat old methods or design a new future?
+            </p>
+
+            <!-- Patch or Blueprint Slide -->
+            <div style="margin-bottom: 3rem;">
+                <img src="../CNMI_Structural_Blueprint/CNMI_Structural_Blueprint_3.jpg" alt="The Choice Before Us: A Patch or a Blueprint" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 8px; box-shadow: 0 20px 40px rgba(0,0,0,0.15);">
+            </div>
+
+            <div class="comparison-grid">
+                <div class="comparison-card patch">
+                    <div class="comparison-icon">🪣</div>
+                    <h3>The Patch Approach</h3>
+                    <h4 style="color: var(--coral); text-align: center; margin-bottom: 1.5rem; font-size: 1.1rem;">The Reactive Approach</h4>
+                    <p>
+                        Relying on temporary subsidies, waiting for tourists to return, blaming the past, and requesting external aid.
+                        Like continuously placing buckets under a leaking roof.
+                    </p>
+                    <ul style="margin-top: 1.5rem; list-style: none;">
+                        <li style="padding: 0.8rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">❌ Temporary Subsidies</li>
+                        <li style="padding: 0.8rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">❌ Waiting for Tourism Recovery</li>
+                        <li style="padding: 0.8rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">❌ Blaming the Past</li>
+                        <li style="padding: 0.8rem 0;">❌ Reliance on External Aid</li>
+                    </ul>
+                </div>
+
+                <div class="comparison-card blueprint">
+                    <div class="comparison-icon">📋</div>
+                    <h3>The Blueprint</h3>
+                    <h4 style="color: var(--gold); text-align: center; margin-bottom: 1.5rem; font-size: 1.1rem;">The Structural Solution</h4>
+                    <p>
+                        Building new permanent revenue streams, creating structural cost savings, legally protecting funds,
+                        and fostering long-term self-sufficiency. Fundamentally redesigning the roof and drainage system to permanently solve the problem.
+                    </p>
+                    <ul style="margin-top: 1.5rem; list-style: none;">
+                        <li style="padding: 0.8rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✅ New Permanent Revenue</li>
+                        <li style="padding: 0.8rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✅ Structural Cost Savings</li>
+                        <li style="padding: 0.8rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✅ Legal Fund Protection</li>
+                        <li style="padding: 0.8rem 0;">✅ Long-term Self-Sufficiency</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 4rem; padding: 2.5rem; background: rgba(242, 95, 92, 0.15); border-left: 4px solid var(--coral); border-radius: 8px;">
+                <p style="font-size: 1.4rem; font-weight: 600; color: var(--gold);">
+                    BJ Attao chooses the structural solution. Not patches, but permanent change.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section id="vision" class="vision">
+        <div class="vision-container">
+            <h2 class="section-title">Our Vision</h2>
+            <div class="vision-grid">
+                <div class="vision-card">
+                    <span class="vision-number">01</span>
+                    <h3>Economic Recovery & Diversification</h3>
+                    <p>Moving beyond tourism dependence to diversify the economic structure with blue economy, renewable energy, and digital industries. Creating new revenue sources for sustainable growth.</p>
+                </div>
+                <div class="vision-card">
+                    <span class="vision-number">02</span>
+                    <h3>Transparent Governance</h3>
+                    <p>Through an AI policy transparency dashboard, all budget expenditures and pledge fulfillment rates are disclosed in real-time. Implementing open administration where every resident can monitor government activities.</p>
+                </div>
+                <div class="vision-card">
+                    <span class="vision-number">03</span>
+                    <h3>Inclusive Communication</h3>
+                    <p>Using a multilingual AI system to explain policies in every resident's language. Chamorro, Tagalog, Korean, Chinese - together with all communities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Five Pillars Section -->
+    <section class="five-pillars">
+        <div class="pillars-container">
+            <h2 class="section-title">Five Pillars for Structural Reform</h2>
+            <p style="text-align: center; font-size: 1.2rem; color: var(--text-dark); opacity: 0.85; max-width: 800px; margin: 0 auto 3rem;">
+                Five interconnected strategies to build a self-sufficient and resilient CNMI
+            </p>
+
+            <!-- Five-Pillar Strategy Slide -->
+            <div style="margin-bottom: 3rem;">
+                <img src="../CNMI_Structural_Blueprint/CNMI_Structural_Blueprint_4.jpg" alt="A Five-Pillar Strategy for Structural Reform" style="width: 100%; max-width: 1000px; margin: 0 auto; display: block; border-radius: 8px; box-shadow: 0 20px 40px rgba(0,0,0,0.15);">
+            </div>
+
+            <div class="pillars-diagram">
+                <div class="pillar-items">
+                    <a href="#policies" class="pillar-item">
+                        <div class="pillar-icon">🌊</div>
+                        <h4>Blue Economy 2026</h4>
+                    </a>
+
+                    <a href="#policies" class="pillar-item">
+                        <div class="pillar-icon">💰</div>
+                        <h4>Pension Trust Fund</h4>
+                    </a>
+
+                    <a href="#policies" class="pillar-item">
+                        <div class="pillar-icon">💼</div>
+                        <h4>Marianas Jobs Now 2029</h4>
+                    </a>
+
+                    <a href="#policies" class="pillar-item">
+                        <div class="pillar-icon">⚡</div>
+                        <h4>Energy Independence</h4>
+                    </a>
+
+                    <a href="#policies" class="pillar-item">
+                        <div class="pillar-icon">📊</div>
+                        <h4>Transparent Governance</h4>
+                    </a>
+
+                    <div class="pillar-center">
+                        <h3>A Resilient<br>CNMI</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <p style="font-size: 1.3rem; color: var(--ocean-deep); font-weight: 600; margin-bottom: 1rem;">
+                    5 Pillars → 5 Outcomes
+                </p>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; max-width: 900px; margin: 0 auto;">
+                    <div style="flex: 1; min-width: 150px; padding: 1rem; background: var(--white); border-left: 3px solid var(--ocean-bright);">
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🛡️</div>
+                        <div style="font-weight: 600; color: var(--ocean-deep);">Economic Resilience</div>
+                    </div>
+                    <div style="flex: 1; min-width: 150px; padding: 1rem; background: var(--white); border-left: 3px solid var(--ocean-bright);">
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔒</div>
+                        <div style="font-weight: 600; color: var(--ocean-deep);">Retiree Security</div>
+                    </div>
+                    <div style="flex: 1; min-width: 150px; padding: 1rem; background: var(--white); border-left: 3px solid var(--ocean-bright);">
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🚩</div>
+                        <div style="font-weight: 600; color: var(--ocean-deep);">Labor Self-Sufficiency</div>
+                    </div>
+                    <div style="flex: 1; min-width: 150px; padding: 1rem; background: var(--white); border-left: 3px solid var(--ocean-bright);">
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🏠</div>
+                        <div style="font-weight: 600; color: var(--ocean-deep);">Living Cost Reduction</div>
+                    </div>
+                    <div style="flex: 1; min-width: 150px; padding: 1rem; background: var(--white); border-left: 3px solid var(--ocean-bright);">
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🤝</div>
+                        <div style="font-weight: 600; color: var(--ocean-deep);">Public Trust</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Policies Section -->
+    <section id="policies" class="policies">
+        <div class="policies-container">
+            <h2 class="section-title">5 Differentiated Policies</h2>
+            <div class="policy-cards">
+                <div class="policy-card">
+                    <div class="policy-icon">🌊</div>
+                    <h3>Blue Economy 2026</h3>
+                    <h4>Economic Diversification</h4>
+                    <p>Breaking free from tourism-only dependence by turning CNMI's vast maritime territory into an asset.</p>
+                    <ul>
+                        <li>Expanding sustainable fisheries and developing marine energy</li>
+                        <li>Attracting deep-sea research centers for new industrial foundations</li>
+                        <li>AI-based analysis for optimal marine resource management</li>
+                    </ul>
+
+                    <!-- Economic Diversification Visualization -->
+                    <div style="margin-top: 2rem; padding: 1.5rem; background: rgba(36, 123, 160, 0.05); border-radius: 8px;">
+                        <h5 style="text-align: center; margin-bottom: 1.5rem; color: var(--ocean-deep); font-size: 1.1rem; font-weight: 600;">📊 Economic Diversification Goals</h5>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <div style="font-size: 0.9rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--text-dark);">Current State</div>
+                            <div style="display: flex; height: 30px; border-radius: 4px; overflow: hidden; margin-bottom: 0.5rem;">
+                                <div style="background: #F25F5C; width: 90%; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.85rem; font-weight: 600;">Tourism 90%</div>
+                                <div style="background: #247BA0; width: 10%; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.75rem; font-weight: 600;">10%</div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div style="font-size: 0.9rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--ocean-deep);">2026 Target</div>
+                            <div style="display: flex; height: 30px; border-radius: 4px; overflow: hidden; margin-bottom: 0.5rem;">
+                                <div style="background: #F25F5C; width: 40%; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.85rem; font-weight: 600;">Tourism 40%</div>
+                                <div style="background: #247BA0; width: 25%; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.8rem; font-weight: 600;">Fisheries 25%</div>
+                                <div style="background: #0A2463; width: 20%; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.8rem; font-weight: 600;">Energy 20%</div>
+                                <div style="background: #1B3A4B; width: 15%; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.75rem; font-weight: 600;">R&D 15%</div>
+                            </div>
+                        </div>
+
+                        <p style="font-size: 0.85rem; margin-top: 1rem; font-style: italic; opacity: 0.8; text-align: center;">AI-based marine resource data verification</p>
+                    </div>
+
+                    <div style="margin-top: 1.5rem; padding: 1.2rem; background: rgba(242, 95, 92, 0.1); border-left: 4px solid var(--coral); border-radius: 4px;">
+                        <p style="font-weight: 600; color: var(--coral); margin-bottom: 0.5rem;">🎯 The Attao Difference</p>
+                        <p style="font-size: 0.95rem; line-height: 1.6;">Other candidates just wait for tourists to return. We build a year-round prosperous marine-based economy.</p>
+                    </div>
+                </div>
+
+                <div class="policy-card">
+                    <div class="policy-icon">💰</div>
+                    <h3>Pension 25% Guarantee Fund</h3>
+                    <h4>Restoring Retiree Trust</h4>
+                    <p>Not temporary subsidies, but establishing a legally segregated pension-only trust fund.</p>
+                    <ul>
+                        <li>Legislating a percentage of public land lease revenue exclusively for pension payments</li>
+                        <li>Restructuring casino gaming taxes to secure stable funding</li>
+                        <li>Prioritizing recovery of 25% unpaid pension through 10% government spending efficiency</li>
+                    </ul>
+
+                    <!-- Fund Flow Diagram -->
+                    <div style="margin-top: 2rem; padding: 1.5rem; background: rgba(212, 175, 55, 0.05); border-radius: 8px;">
+                        <h5 style="text-align: center; margin-bottom: 1.5rem; color: var(--ocean-deep); font-size: 1.1rem; font-weight: 600;">💰 Fund Flow Structure</h5>
+
+                        <div style="display: grid; grid-template-columns: 1fr auto 1fr; gap: 1.5rem; align-items: center;">
+                            <!-- General Budget -->
+                            <div style="background: rgba(242, 95, 92, 0.1); padding: 1.5rem; border-radius: 8px; border: 2px solid rgba(242, 95, 92, 0.3);">
+                                <div style="text-align: center; font-weight: 600; margin-bottom: 1rem; color: var(--coral);">General Government Budget</div>
+                                <div style="font-size: 0.85rem; text-align: center; opacity: 0.8;">
+                                    Operations<br>
+                                    Infrastructure<br>
+                                    Etc.
+                                </div>
+                            </div>
+
+                            <!-- Arrow -->
+                            <div style="font-size: 2rem; color: var(--ocean-bright);">→</div>
+
+                            <!-- Trust Fund -->
+                            <div style="background: rgba(212, 175, 55, 0.15); padding: 1.5rem; border-radius: 8px; border: 3px solid var(--gold); position: relative;">
+                                <div style="position: absolute; top: -15px; right: 10px; font-size: 2rem;">🔒</div>
+                                <div style="text-align: center; font-weight: 600; margin-bottom: 1rem; color: var(--gold);">Pension Guarantee Trust Fund</div>
+                                <div style="font-size: 0.8rem; margin-bottom: 0.8rem; padding: 0.5rem; background: rgba(255,255,255,0.8); border-radius: 4px;">
+                                    <div style="font-weight: 600; color: var(--ocean-deep); margin-bottom: 0.3rem;">Revenue Sources:</div>
+                                    <div>🏝️ Public Land Leases</div>
+                                    <div>🏭 New Industry BGRT</div>
+                                </div>
+                                <div style="text-align: center; padding: 0.8rem; background: var(--gold); color: white; border-radius: 4px; font-weight: 600;">
+                                    ✓ Guaranteed Retiree Payments
+                                </div>
+                            </div>
+                        </div>
+
+                        <p style="font-size: 0.85rem; margin-top: 1.5rem; font-style: italic; opacity: 0.8; text-align: center;">Legally separated, absolutely non-transferable</p>
+                    </div>
+
+                    <div style="margin-top: 1.5rem; padding: 1.2rem; background: rgba(242, 95, 92, 0.1); border-left: 4px solid var(--coral); border-radius: 4px;">
+                        <p style="font-weight: 600; color: var(--coral); margin-bottom: 0.5rem;">🎯 The Attao Difference</p>
+                        <p style="font-size: 0.95rem; line-height: 1.6;">Instead of blaming past administrations, we present a professional-level budget solution that legally guarantees funds retirees have earned. Not promises, but mechanisms.</p>
+                    </div>
+                </div>
+
+                <div class="policy-card">
+                    <div class="policy-icon">💼</div>
+                    <h3>Marianas Jobs Now 2029</h3>
+                    <h4>Labor Market Soft Landing</h4>
+                    <p>Preparing for the 2029 CW-1 visa termination by upgrading the local workforce.</p>
+                    <ul>
+                        <li>Introducing AI education systems for digital skills and tourism expertise</li>
+                        <li>Establishing legal support and labor rights centers for Filipino workers</li>
+                        <li>Cultivating self-sufficient skilled local talent</li>
+                    </ul>
+
+                    <!-- Labor Independence Timeline -->
+                    <div style="margin-top: 2rem; padding: 1.5rem; background: rgba(36, 123, 160, 0.05); border-radius: 8px;">
+                        <h5 style="text-align: center; margin-bottom: 1.5rem; color: var(--ocean-deep); font-size: 1.1rem; font-weight: 600;">📈 Labor Self-Sufficiency Roadmap (2024→2029)</h5>
+
+                        <div style="position: relative; padding: 2rem 0;">
+                            <!-- Timeline Line -->
+                            <div style="position: absolute; top: 3rem; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--coral) 0%, var(--ocean-bright) 100%);"></div>
+
+                            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; position: relative;">
+                                <!-- TODAY -->
+                                <div style="text-align: center;">
+                                    <div style="background: var(--coral); color: white; padding: 0.5rem; border-radius: 4px; font-weight: 600; margin-bottom: 0.5rem;">TODAY</div>
+                                    <div style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                                        <div style="font-weight: 600; color: var(--coral);">Local 20%</div>
+                                        <div style="opacity: 0.7;">Foreign 80%</div>
+                                    </div>
+                                    <div style="height: 60px; background: rgba(242, 95, 92, 0.1); border-radius: 4px; display: flex; align-items: flex-end; padding: 0.3rem;">
+                                        <div style="width: 100%; height: 25%; background: var(--ocean-bright);"></div>
+                                    </div>
+                                </div>
+
+                                <!-- 2025 -->
+                                <div style="text-align: center;">
+                                    <div style="background: var(--ocean-bright); color: white; padding: 0.5rem; border-radius: 4px; font-weight: 600; margin-bottom: 0.5rem;">2025</div>
+                                    <div style="font-size: 0.75rem; margin-bottom: 0.5rem; height: 2.5rem;">
+                                        🎓 AI Training Launch
+                                    </div>
+                                    <div style="height: 60px;"></div>
+                                </div>
+
+                                <!-- 2026-2027 -->
+                                <div style="text-align: center;">
+                                    <div style="background: var(--ocean-bright); color: white; padding: 0.5rem; border-radius: 4px; font-weight: 600; margin-bottom: 0.5rem;">2026-27</div>
+                                    <div style="font-size: 0.75rem; margin-bottom: 0.5rem; height: 2.5rem;">
+                                        🎓 First Graduates
+                                    </div>
+                                    <div style="height: 60px;"></div>
+                                </div>
+
+                                <!-- 2029 -->
+                                <div style="text-align: center;">
+                                    <div style="background: var(--gold); color: white; padding: 0.5rem; border-radius: 4px; font-weight: 600; margin-bottom: 0.5rem;">2029</div>
+                                    <div style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                                        <div style="font-weight: 600; color: var(--gold);">Local 85%</div>
+                                        <div style="opacity: 0.7;">Foreign 15%</div>
+                                    </div>
+                                    <div style="height: 60px; background: rgba(212, 175, 55, 0.1); border-radius: 4px; display: flex; align-items: flex-end; padding: 0.3rem;">
+                                        <div style="width: 100%; height: 85%; background: var(--ocean-bright);"></div>
+                                    </div>
+                                    <div style="margin-top: 0.5rem; font-weight: 600; color: var(--gold); font-size: 0.85rem;">✓ Self-Sufficiency Achieved</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p style="font-size: 0.85rem; margin-top: 1rem; font-style: italic; opacity: 0.8; text-align: center;">Local workforce development plan for CW-1 visa termination</p>
+                    </div>
+
+                    <div style="margin-top: 1.5rem; padding: 1.2rem; background: rgba(242, 95, 92, 0.1); border-left: 4px solid var(--coral); border-radius: 4px;">
+                        <p style="font-weight: 600; color: var(--coral); margin-bottom: 0.5rem;">🎯 The Attao Difference</p>
+                        <p style="font-size: 0.95rem; line-height: 1.6;">The passive approach is requesting visa extensions from the federal government. Our proactive strategy is developing our own workforce to create a self-sufficient labor market where we control our own destiny.</p>
+                    </div>
+                </div>
+
+                <div class="policy-card">
+                    <div class="policy-icon">⚡</div>
+                    <h3>Renewable Energy Transition</h3>
+                    <h4>30% Living Cost Reduction</h4>
+                    <p>Structurally solving high electricity costs to increase real income.</p>
+                    <ul>
+                        <li>Full implementation of solar and energy storage systems (BESS) in public facilities</li>
+                        <li>Dramatic subsidies and installment systems for residential solar installation</li>
+                        <li>Supporting middle class and small businesses through energy independence</li>
+                    </ul>
+
+                    <!-- Before/After Energy Visualization -->
+                    <div style="margin-top: 2rem; padding: 1.5rem; background: rgba(212, 175, 55, 0.05); border-radius: 8px;">
+                        <h5 style="text-align: center; margin-bottom: 1.5rem; color: var(--ocean-deep); font-size: 1.1rem; font-weight: 600;">⚡ Electricity Bill Reduction Effect</h5>
+
+                        <div style="display: grid; grid-template-columns: 1fr auto 1fr; gap: 2rem; align-items: center;">
+                            <!-- BEFORE -->
+                            <div style="text-align: center; padding: 1.5rem; background: rgba(242, 95, 92, 0.1); border-radius: 8px; border: 2px solid rgba(242, 95, 92, 0.3);">
+                                <div style="font-weight: 600; font-size: 1.2rem; color: var(--coral); margin-bottom: 1rem;">BEFORE</div>
+                                <div style="font-size: 3rem; margin-bottom: 1rem;">🏠</div>
+                                <div style="background: white; padding: 1rem; border-radius: 4px; margin-bottom: 0.5rem;">
+                                    <div style="font-size: 2rem; color: var(--coral); font-weight: 700; margin-bottom: 0.3rem;">$250</div>
+                                    <div style="font-size: 0.85rem; opacity: 0.7;">Monthly Electric Bill</div>
+                                </div>
+                                <div style="font-size: 1.5rem; color: var(--coral);">↑</div>
+                                <div style="font-size: 0.85rem; opacity: 0.8; margin-top: 0.5rem;">High Living Cost Burden</div>
+                            </div>
+
+                            <!-- Arrow -->
+                            <div style="font-size: 3rem; color: var(--ocean-bright);">→</div>
+
+                            <!-- AFTER -->
+                            <div style="text-align: center; padding: 1.5rem; background: rgba(212, 175, 55, 0.1); border-radius: 8px; border: 3px solid var(--gold);">
+                                <div style="font-weight: 600; font-size: 1.2rem; color: var(--gold); margin-bottom: 1rem;">AFTER</div>
+                                <div style="font-size: 3rem; margin-bottom: 1rem;">🏠☀️</div>
+                                <div style="background: white; padding: 1rem; border-radius: 4px; margin-bottom: 0.5rem;">
+                                    <div style="font-size: 2rem; color: var(--gold); font-weight: 700; margin-bottom: 0.3rem;">$175</div>
+                                    <div style="font-size: 0.85rem; opacity: 0.7;">Monthly Electric Bill</div>
+                                    <div style="background: var(--gold); color: white; padding: 0.3rem 0.6rem; border-radius: 4px; display: inline-block; margin-top: 0.5rem; font-size: 0.85rem; font-weight: 600;">-30%</div>
+                                </div>
+                                <div style="font-size: 1.5rem; color: var(--gold);">↓</div>
+                                <div style="font-size: 0.85rem; opacity: 0.8; margin-top: 0.5rem;">Annual $900 Savings</div>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 1.5rem; text-align: center; padding: 1rem; background: rgba(36, 123, 160, 0.1); border-radius: 4px;">
+                            <p style="font-size: 0.9rem; font-weight: 600; color: var(--ocean-deep); margin-bottom: 0.3rem;">💰 Real Income Increase Effect</p>
+                            <p style="font-size: 0.85rem; opacity: 0.8;">Permanent living cost reduction = Middle class real income improvement</p>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 1.5rem; padding: 1.2rem; background: rgba(242, 95, 92, 0.1); border-left: 4px solid var(--coral); border-radius: 4px;">
+                        <p style="font-weight: 600; color: var(--coral); margin-bottom: 0.5rem;">🎯 The Attao Difference</p>
+                        <p style="font-size: 0.95rem; line-height: 1.6;">One-time electricity bill support is temporary relief. Our plan permanently reduces fixed living costs to continuously increase real income for middle-class families and small businesses.</p>
+                    </div>
+                </div>
+
+                <div class="policy-card">
+                    <div class="policy-icon">📊</div>
+                    <h3>AI Transparency Dashboard</h3>
+                    <h4>Transparent Governance</h4>
+                    <p>Creating a new government that solves past administration opacity with technology.</p>
+                    <ul>
+                        <li>Real-time disclosure of government budget execution details</li>
+                        <li>Pledge fulfillment rate checkable anytime on smartphones</li>
+                        <li>Establishing resident-participatory policy feedback system</li>
+                    </ul>
+
+                    <!-- AI Dashboard Mockup -->
+                    <div style="margin-top: 2rem; padding: 1.5rem; background: rgba(36, 123, 160, 0.05); border-radius: 8px;">
+                        <h5 style="text-align: center; margin-bottom: 1.5rem; color: var(--ocean-deep); font-size: 1.1rem; font-weight: 600;">🖥️ AI Transparency Dashboard Preview</h5>
+
+                        <div style="background: linear-gradient(135deg, var(--ocean-deep), var(--ocean-bright)); padding: 1.5rem; border-radius: 8px; color: white;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.2);">
+                                <div style="font-size: 1.1rem; font-weight: 600;">CNMI Public Trust Dashboard</div>
+                                <div style="font-size: 0.75rem; opacity: 0.8;">🔴 Updated: Just now</div>
+                            </div>
+
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                                <!-- Real-Time Budget Tracking -->
+                                <div style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); padding: 1.2rem; border-radius: 6px;">
+                                    <div style="font-weight: 600; margin-bottom: 1rem; font-size: 0.9rem;">Real-Time Budget Tracking</div>
+                                    <div style="display: flex; align-items: center; justify-content: center; height: 120px;">
+                                        <div style="position: relative; width: 100px; height: 100px;">
+                                            <svg viewBox="0 0 100 100" style="transform: rotate(-90deg);">
+                                                <circle cx="50" cy="50" r="40" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="10"/>
+                                                <circle cx="50" cy="50" r="40" fill="none" stroke="var(--gold)" stroke-width="10" stroke-dasharray="251" stroke-dashoffset="75" stroke-linecap="round"/>
+                                            </svg>
+                                            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-weight: 700; font-size: 1.2rem;">Q3</div>
+                                        </div>
+                                    </div>
+                                    <div style="font-size: 0.75rem; margin-top: 0.8rem; opacity: 0.9;">
+                                        <div>Education: 30%</div>
+                                        <div>Health: 25%</div>
+                                        <div>Public Works: 20%</div>
+                                        <div>Safety: 15%</div>
+                                    </div>
+                                </div>
+
+                                <!-- Pledge Fulfillment Meter -->
+                                <div style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); padding: 1.2rem; border-radius: 6px;">
+                                    <div style="font-weight: 600; margin-bottom: 1rem; font-size: 0.9rem;">Pledge Fulfillment Meter</div>
+                                    <div style="margin: 0.8rem 0;">
+                                        <div style="display: flex; justify-content: space-between; font-size: 0.8rem; margin-bottom: 0.3rem;">
+                                            <span>Energy Bill Reduction</span>
+                                            <span>75%</span>
+                                        </div>
+                                        <div style="background: rgba(255,255,255,0.2); height: 8px; border-radius: 4px; overflow: hidden;">
+                                            <div style="background: var(--gold); height: 100%; width: 75%; border-radius: 4px;"></div>
+                                        </div>
+                                    </div>
+                                    <div style="margin: 0.8rem 0;">
+                                        <div style="display: flex; justify-content: space-between; font-size: 0.8rem; margin-bottom: 0.3rem;">
+                                            <span>Pension Fund Secured</span>
+                                            <span>60%</span>
+                                        </div>
+                                        <div style="background: rgba(255,255,255,0.2); height: 8px; border-radius: 4px; overflow: hidden;">
+                                            <div style="background: var(--gold); height: 100%; width: 60%; border-radius: 4px;"></div>
+                                        </div>
+                                    </div>
+                                    <div style="margin: 0.8rem 0;">
+                                        <div style="display: flex; justify-content: space-between; font-size: 0.8rem; margin-bottom: 0.3rem;">
+                                            <span>Infrastructure Revamp</span>
+                                            <span>45%</span>
+                                        </div>
+                                        <div style="background: rgba(255,255,255,0.2); height: 8px; border-radius: 4px; overflow: hidden;">
+                                            <div style="background: var(--gold); height: 100%; width: 45%; border-radius: 4px;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="text-align: center; margin-top: 1.2rem; font-size: 0.75rem; opacity: 0.8;">
+                                🔍 Accessible to All Citizens | Every citizen can become a watchdog
+                            </div>
+                        </div>
+
+                        <p style="font-size: 0.85rem; margin-top: 1rem; font-style: italic; opacity: 0.8; text-align: center;">Truth proven by technology, real-time data not words</p>
+                    </div>
+
+                    <div style="margin-top: 1.5rem; padding: 1.2rem; background: rgba(242, 95, 92, 0.1); border-left: 4px solid var(--coral); border-radius: 4px;">
+                        <p style="font-weight: 600; color: var(--coral); margin-bottom: 0.5rem;">🎯 The Attao Difference</p>
+                        <p style="font-size: 0.95rem; line-height: 1.6;">In an era of corruption scandals and opaque administration, we don't just promise ethics. We build a system where transparency is technologically guaranteed.</p>
+                    </div>
+                </div>
+
+                <div class="policy-card">
+                    <div class="policy-icon">✈️</div>
+                    <h3>Tourism Strategic Recovery</h3>
+                    <h4>Foundation of Economic Recovery</h4>
+                    <p>Strategically rebuilding the stagnant tourism industry.</p>
+                    <ul>
+                        <li>Strategic federal government negotiations for Chinese tourism market reopening</li>
+                        <li>Strengthening airline incentives to secure stable Korea-Japan routes</li>
+                        <li>Eliminating startup regulations with One-Stop Business permit system</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="team-container">
+            <h2 class="section-title" style="color: var(--gold);">The Strongest Administrative Duo</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <h3>Blas "BJ" Attao</h3>
+                    <p class="role">Gubernatorial Candidate</p>
+                    <p class="bio">CNMI House Vice Speaker and former 21st Speaker. Served as House Representative for over 8 years since 2015, playing a central role in CNMI politics. Graduate of Boise State University.</p>
+                    <ul class="experience-list">
+                        <li>Current CNMI House Vice Speaker (3rd District)</li>
+                        <li>Former 21st House Speaker</li>
+                        <li>Budget preparation and oversight expert</li>
+                        <li>Crisis management and federal system coordination capabilities</li>
+                    </ul>
+                </div>
+
+                <div class="team-member">
+                    <h3>Edmund S. Villagomez</h3>
+                    <p class="role">Lt. Governor Candidate</p>
+                    <p class="bio">Current CNMI House Speaker and multi-term Representative. Served as 22nd & 23rd House Speaker, demonstrating leadership in legislative cooperation and communication. Expertise in education and welfare policy.</p>
+                    <ul class="experience-list">
+                        <li>Current CNMI House Speaker (3rd District)</li>
+                        <li>Former 22nd & 23rd House Speaker</li>
+                        <li>Education and welfare policy expert</li>
+                        <li>Community trust and communication-centered leadership</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blueprint Synthesized Section -->
+    <section style="padding: 6rem 2rem; background: var(--white);">
+        <div style="max-width: 1400px; margin: 0 auto;">
+            <h2 class="section-title">The Blueprint Synthesized: From Dependency to Self-Sufficiency</h2>
+            <p style="text-align: center; font-size: 1.2rem; color: var(--text-dark); opacity: 0.85; max-width: 900px; margin: 0 auto 3rem;">
+                5 Pillars creating 5 Outcomes - Transforming to a Resilient and Prosperous CNMI
+            </p>
+            <div style="margin-bottom: 3rem;">
+                <img src="../CNMI_Structural_Blueprint/CNMI_Structural_Blueprint_13.jpg" alt="The Blueprint Synthesized: From Dependency to Self-Sufficiency" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 8px; box-shadow: 0 20px 40px rgba(0,0,0,0.15);">
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Technology Section -->
+    <section id="ai-tech" class="ai-tech">
+        <div class="ai-container">
+            <h2 class="section-title" style="color: var(--sand);">Opening New Communication with AI Technology</h2>
+            <p style="text-align: center; font-size: 1.2rem; opacity: 0.9; max-width: 900px; margin: 0 auto 3rem;">
+                Building a smart government where all residents can easily access government services regardless of language
+            </p>
+            <div class="ai-features">
+                <div class="ai-feature">
+                    <div class="ai-feature-icon">💬</div>
+                    <h3>24/7 Multilingual Citizen Support</h3>
+                    <p>AI chatbots answer government service inquiries instantly in Tagalog, Chamorro, Korean, Chinese, and English 24/7. All residents can access information without language barriers.</p>
+                </div>
+
+                <div class="ai-feature">
+                    <div class="ai-feature-icon">🏛️</div>
+                    <h3>Real-Time Translation Public Services</h3>
+                    <p>When visiting government offices, use all services in your language. Document preparation, consultations, and public hearing participation available in your native language.</p>
+                </div>
+
+                <div class="ai-feature">
+                    <div class="ai-feature-icon">📱</div>
+                    <h3>Simple Language Policy Explanations</h3>
+                    <p>AI explains complex government policies in simple, easy language. Ask "How is the pension system changing?" and receive understandable answers for everyone.</p>
+                </div>
+
+                <div class="ai-feature">
+                    <div class="ai-feature-icon">⚡</div>
+                    <h3>Smart Complaint Processing System</h3>
+                    <p>AI automatically categorizes complaints and routes them to appropriate departments. Reducing average processing time by 50% to save residents' time.</p>
+                </div>
+
+                <div class="ai-feature">
+                    <div class="ai-feature-icon">🎯</div>
+                    <h3>Personalized Information Alerts</h3>
+                    <p>AI automatically notifies each resident of relevant government support, subsidies, and programs. Receive customized alerts like "There's an energy subsidy available for you."</p>
+                </div>
+
+                <div class="ai-feature">
+                    <div class="ai-feature-icon">🔍</div>
+                    <h3>Real-Time Transparency Dashboard</h3>
+                    <p>Check government budget execution, pledge fulfillment rates, and project progress anytime on your smartphone. Every resident becomes a watchdog.</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 4rem; padding: 2.5rem; background: rgba(212, 175, 55, 0.15); border-left: 4px solid var(--gold); border-radius: 8px; max-width: 900px; margin-left: auto; margin-right: auto;">
+                <p style="font-size: 1.3rem; font-weight: 600; color: var(--sand); margin-bottom: 1rem;">
+                    Truly Inclusive Government
+                </p>
+                <p style="font-size: 1.05rem; line-height: 1.7; opacity: 0.95;">
+                    Creating a truly inclusive government where all residents, regardless of language and education level, can easily use government services, understand policies, and voice their opinions. This is the true value of AI technology.
+                </p>
+            </div>
+
+            <!-- AI Tools for Citizens Slide -->
+            <div style="margin-top: 4rem;">
+                <img src="../CNMI_Structural_Blueprint/CNMI_Structural_Blueprint_11.jpg" alt="Making Policy Personal: AI Tools for Citizens" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 8px; box-shadow: 0 20px 40px rgba(0,0,0,0.15);">
+            </div>
+
+            <!-- Inclusive Conversation Slide -->
+            <div style="margin-top: 3rem;">
+                <img src="../CNMI_Structural_Blueprint/CNMI_Structural_Blueprint_12.jpg" alt="An Inclusive Conversation: Reaching Every Community" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block; border-radius: 8px; box-shadow: 0 20px 40px rgba(0,0,0,0.15);">
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Message Section -->
+    <section class="video-section">
+        <div class="video-container">
+            <h2 class="section-title">Special Message (Sample)</h2>
+            <p style="text-align: center; font-size: 1.2rem; color: var(--text-dark); opacity: 0.85; max-width: 800px; margin: 0 auto 1rem;">
+                Special Address by President Jung Chang-deok
+            </p>
+            <p style="text-align: center; font-size: 1rem; color: var(--text-dark); opacity: 0.75; max-width: 700px; margin: 0 auto;">
+                Listen to important messages about BJ Attao's vision and the future of CNMI
+            </p>
+
+            <div class="video-wrapper">
+                <video controls preload="metadata" poster="">
+                    <source src="../정창덕 총장 연설.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div style="margin-top: 3rem; text-align: center; padding: 2rem; background: rgba(36, 123, 160, 0.05); border-radius: 8px;">
+                <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-dark); opacity: 0.85;">
+                    This address explains BJ Attao's structural reform blueprint and vision for CNMI's future.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Closing Impact Section -->
+    <section style="position: relative; padding: 0; overflow: hidden;">
+        <div style="position: relative;">
+            <img src="../CNMI_Structural_Blueprint/CNMI_Structural_Blueprint_14.jpg" alt="The choice is not between candidates" style="width: 100%; height: auto; display: block;">
+
+            <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(10, 36, 99, 0.95), transparent); padding: 4rem 2rem;">
+                <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
+                    <p style="font-size: 1.3rem; color: var(--white); margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto; opacity: 0.95;">
+                        A resilient, prosperous, and predictable future. A future built on solid foundations.
+                    </p>
+
+                    <div style="display: inline-block; background: rgba(255, 255, 255, 0.95); padding: 2rem; border-radius: 8px; margin-bottom: 2rem;">
+                        <p style="font-family: 'Crimson Pro', serif; font-size: 1.8rem; font-weight: 600; color: var(--ocean-deep); margin-bottom: 0.5rem;">
+                            BJ Attao
+                        </p>
+                        <p style="font-size: 1.1rem; color: var(--text-dark); margin-bottom: 1rem;">
+                            A Leader Proven by Results, Not Words
+                        </p>
+                        <div style="display: inline-block;">
+                            <img src="../bj-attao-campaign.jpg" alt="BJ Attao Campaign Video QR Code" style="width: 100px; height: 100px; border: 2px solid var(--ocean-deep); border-radius: 4px;">
+                            <p style="font-size: 0.85rem; margin-top: 0.5rem; color: var(--text-dark);">📹 Watch the Video</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a href="#contact" class="btn" style="background: var(--gold); color: var(--ocean-deep); padding: 1.5rem 3rem; font-size: 1.3rem; font-weight: 700; border: none; text-decoration: none; display: inline-block; border-radius: 4px; transition: all 0.3s; box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);">
+                            Let's Create Change Together
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <h2 class="section-title">Creating Change Together</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 3rem; color: var(--text-dark); opacity: 0.85;">
+                Opening the future of the Northern Mariana Islands together. We want to hear your voice.
+            </p>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h4>Email</h4>
+                    <p>contact@bjattao2026.org</p>
+                </div>
+                <div class="contact-item">
+                    <h4>Phone</h4>
+                    <p>+1 (670) XXX-XXXX</p>
+                </div>
+                <div class="contact-item">
+                    <h4>Office</h4>
+                    <p>Garapan, Saipan, CNMI</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 3rem;">
+                <a href="#" class="btn btn-primary" style="font-size: 1.2rem; padding: 1.5rem 3rem;">Apply to Volunteer</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p class="footer-motto">"A Leader Proven by Results, Not Words"</p>
+            <p class="footer-text">
+                Blas "BJ" Attao for Governor 2026<br>
+                Northern Mariana Islands
+            </p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <p style="margin-top: 2rem; opacity: 0.6; font-size: 0.9rem;">
+                © 2026 BJ Attao for Governor. All rights reserved.<br>
+                Paid for by Friends of BJ Attao
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.vision-card, .policy-card, .team-member, .ai-feature').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease-out';
+            observer.observe(el);
+        });
+
+        // Stats counter animation
+        const animateStats = () => {
+            const stats = document.querySelectorAll('.stat-number');
+            stats.forEach(stat => {
+                const target = stat.textContent;
+                stat.textContent = '0';
+
+                const increment = () => {
+                    const current = parseInt(stat.textContent);
+                    const targetNum = parseInt(target);
+
+                    if (current < targetNum) {
+                        stat.textContent = Math.min(current + Math.ceil(targetNum / 50), targetNum);
+                        setTimeout(increment, 30);
+                    } else {
+                        stat.textContent = target;
+                    }
+                };
+
+                setTimeout(increment, 200);
+            });
+        };
+
+        // Trigger stats animation on scroll
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateStats();
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        statsObserver.observe(document.querySelector('.stats'));
+
+        // Language switcher
+        function changeLanguage(lang) {
+            // Remove active class from all buttons
+            document.querySelectorAll('.language-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Add active class to selected button
+            event.target.closest('.language-btn').classList.add('active');
+
+            // Store language preference
+            localStorage.setItem('selectedLanguage', lang);
+
+            // Redirect to appropriate page
+            const messages = {
+                'ko': '../index.html',
+                'en': './index.html',
+                'ch': 'Chamorro translation coming soon',
+                'ca': 'Carolinian translation coming soon',
+                'ja': 'Japanese translation coming soon'
+            };
+
+            if (lang === 'ko') {
+                window.location.href = messages[lang];
+            } else if (lang === 'en') {
+                // Already on English page
+            } else {
+                alert(messages[lang]);
+            }
+        }
+
+        // Load saved language preference on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            const savedLang = localStorage.getItem('selectedLanguage') || 'en';
+            document.querySelectorAll('.language-btn').forEach(btn => {
+                if (btn.getAttribute('onclick').includes(`'${savedLang}'`)) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
